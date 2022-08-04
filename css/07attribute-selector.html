@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* attribute selector [attrName] */
+        /* href 속성이 있는 요소들 선택 */
+        [href] {background-color: yellow}
+        [title] {border: 5px solid;}
+        [href="https://www.google.com"] {font-size: 2em;}
+        a[target="_blank"] {background-color: yellow;}
+    </style>   
+</head>
+<body>
+    <!-- (a>lorem1^br)*5 -->
+    <a href="https://www.daum.net" title="다음">Lorem.</a><br>
+    <a href="https://www.google.com">Iusto.</a><br>
+    <a href="https://www.naver.com">Asperiores.</a><br>
+    <a href="">Consectetur.</a><br>
+    <a href="">Suscipit.</a><br>
+
+    <hr>
+    
+    <!-- a[target]*3>lorem1 -->
+    <a href="https://www.naver.com" target="_blank">
+        Lorem.
+    </a>
+    <a href="https://www.daum.net" target="">
+        Voluptates!
+    </a>
+    <a href="" target="">
+        Dolores.
+    </a>
+
+</body>
+</html>
