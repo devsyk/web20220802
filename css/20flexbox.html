@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item {font-size: 48px;}
+        .item:nth-child(odd) {background-color: salmon;}
+        .item:nth-child(even) {background-color: yellowgreen;}
+        .flexbox {display: flex; background-color: aquamarine;}
+        .item {width: 100px; height: 300px;}
+        
+        .itm {font-size: 48px;}
+        .itm:nth-child(odd) {background-color: cadetblue;}
+        .itm:nth-child(even) {background-color: wheat;}
+        .container {display:flex; background-color: crimson; height: 200px;} 
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <!-- #div$.item*5{$} -->
+        <div id="div1" class="item">1</div>
+        <div id="div2" class="item">2</div>
+        <div id="div3" class="item">3</div>
+        <div id="div4" class="item">4</div>
+        <div id="div5" class="item">5</div>    
+    </div>
+
+    <br><hr><br>
+
+    <!-- .container>.itm#itm$*5{$) -->
+    <div class="container">
+        <div class="itm" id="itm1">1</div>
+        <div class="itm" id="itm2">2</div>
+        <div class="itm" id="itm3">3</div>
+        <div class="itm" id="itm4">4</div>
+        <div class="itm" id="itm5">5</div>
+    </div>
+
+    <br><hr><br>
+
+    <!-- div>div*4 -->
+    <style>
+        .parent {display: flex;}
+        .parent > div {font-size: 30px; font-weight: bold; padding: 50px 25px;}
+        .parent > div:hover {background-color: gold;}
+    </style>
+    <div class="parent">
+        <div >Tutorial<i class="fa-solid fa-caret-down"></i></div>
+        <div>Reference<i class="fa-solid fa-caret-down"></i></div>
+        <div>Exercise<i class="fa-solid fa-caret-down"></i></div>
+        <div>Video<i class="fa-solid fa-caret-down"></i></div>
+    </div>
+
+    <br><hr><br>
+
+    <style>
+        .menu {display: flex; background-color: rgb(36, 34, 34); color: aliceblue; height: 90px;}
+        .menu > div {font-size: 30px; font-weight: bold; padding: 25px;}
+        .menu > div:hover {background-color: black;}
+        .menu > div:active {background-color: darkgreen;}
+    </style>
+    <div class="menu">
+        <div><i class="fa-solid fa-house-chimney"></i></div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>SQL</div>
+        <div>PYTHON</div>
+        <div>PHP</div>
+        <div>BOOTSTRAP</div>
+        <div>HOW TO</div>  
+    </div>
+</body>
+</html>
