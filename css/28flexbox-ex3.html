@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .parent {display: flex;}
+        .parent > div {font-size: 15px; font-weight: bold; padding: 20px 15px;}
+        .parent > div:hover {background-color: green;}
+        .side {border-radius: 10px;}
+        #side1 {margin-left: auto;}
+        /*#side1 {margin-left: auto; background-color: palevioletred;}
+        #side2 {background-color: white;}
+        #side3 {background-color: green;} */
+        /* .side:hover {background-color: green;} */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>Tutorials<i class="fa-solid fa-caret-down"></i></div>
+        <div>References<i class="fa-solid fa-caret-down"></i></div>
+        <div>Exercises<i class="fa-solid fa-caret-down"></i></div>
+        <div>Videos<i class="fa-solid fa-caret-down"></i></div>
+
+        <!-- <div class="ml-auto">Pro</div> -->
+        <div id="side1" class="side">Get Certified</div>
+        <div id="side2" class="side">Website</div>
+        <div id="side3" class="side">Log in</div>
+
+        <!-- <div id="side1" class="side">Get Certified</div>
+        <div id="side2" class="side">Website</div>
+        <div id="side3" class="side">Log in</div> -->
+    </div>
+</body>
+</html>
