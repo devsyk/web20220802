@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        let i = {name: "jimin", group: "bts", age: 20, song:"dynamite"};
+        console.log(i);
+        console.log(i.group);
+
+        let j = {
+            name: "jhope", 
+            age: 20, 
+            sing: function() {
+                console.log("노래를 부른다");
+            },
+            dance: function() {
+                console.log("춤을 춘다");
+            }
+        };
+
+        function myfunc() {
+            console.log("함수 실행..");
+        }
+        myfunc();
+
+        console.log(j.name);
+        j.sing();
+        j.dance();
+
+        console.log("===================");
+
+        let a = {
+            name: "donald",
+            score: [90, 91, 80, 89]
+        };
+
+        let arr = [2, 3, 4];
+        console.log(arr[1]); //3
+
+        //console.log(a.score[0]); //90
+        for(let i = 0; i < a.score.length; i++) {
+            console.log(a.score[i]);
+        }
+
+        //console.log(a.score);
+        //a.score = [5,6,7,8]; //객체 전체를 바꾸는것
+        a.score[0] = 5;
+        a.score[1] = 6;
+        a.score[2] = 7;
+        a.score[3] = 8;
+        console.log(a.score);
+
+        console.log("===================");
+
+        let b = {
+            name: "donald",
+            age: 40,
+            car: {
+                model: "tesla",
+                color: "white",
+                weight: 1000
+            }
+        };
+        console.log(b.car.model, b.car.color, b.car.weight);
+        //b.car = {model:"sonata", color:"black", weight: 5000}; //car 객체 전체를 바꿈
+        b.car.model = "sonata";
+        b.car.color = "black";
+        b.car.weight = 5000;
+        //console.log(b);
+        console.log(b.car.model, b.car.color, b.car.weight);
+        
+        console.log("===================");
+
+        let c = {
+            name: "donald",
+            drink: function() {
+                console.log("술을 마십니다.");
+            }
+        }
+        console.log(c.name);
+        c.drink();
+
+        c.name = "trump";
+        console.log(c.name);
+        c.drink = function() {
+            console.log("물을 마십니다.");
+        }
+        c.drink();
+
+        console.log("===================");
+
+        let d = {
+            color: "gold",
+            dance: function() {
+                console.log("춤을 춥니다.");
+            }
+        };
+        console.log(d.color);
+        d.dance();
+        console.log(d.name); //undefined
+
+        d.name = "donald";
+        console.log(d.name);
+    </script>
+</body>
+</html>
