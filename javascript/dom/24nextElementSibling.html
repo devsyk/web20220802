@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <h2>
+        Lorem.
+    </h2>
+    <h3>
+        Lorem.
+    </h3>
+
+    <br><hr><br>
+
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsa consectetur iusto non dolor, voluptas fugiat quae esse reprehenderit obcaecati labore, ad consequatur. Eos doloremque reprehenderit tenetur sunt a temporibus.
+    </p>
+    <h1>
+        Incidunt.
+    </h1>
+    <p>
+        A facere voluptatem voluptatum nulla error. Neque, fugit! Repudiandae nisi cumque, a qui architecto odit autem neque repellendus, ullam doloribus iure laudantium aliquid, ea quod beatae enim illum soluta delectus.
+    </p>
+    <h1>
+        Fugit!
+    </h1>
+    <p>
+        Aliquam, qui harum? Modi, alias rerum eius a adipisci qui. Officiis deleniti soluta excepturi ad quidem, dolor aspernatur nulla incidunt nostrum quod modi eveniet, ex minus labore quisquam saepe veritatis?
+    </p>
+    <h1>
+        Obcaecati.
+    </h1>
+    <p>
+        Quaerat quas nisi ad iusto corporis hic, provident esse, repudiandae blanditiis adipisci eos eveniet. Possimus minus dicta consectetur illum non. Aliquid error qui vitae consequuntur veritatis voluptatibus, recusandae architecto quod.
+    </p>
+    <h1>
+        Et!
+    </h1>
+    <p>
+        Inventore natus libero hic dolores eveniet cupiditate ipsa voluptatibus qui temporibus obcaecati. Modi odio perferendis maxime, sit id deleniti sed quasi exercitationem corporis autem nostrum repellat omnis velit, quis alias.
+    </p>
+    <h1>
+        Id?
+    </h1>
+    <p>
+        Eaque, labore nobis. Tenetur asperiores quis libero accusamus, error magnam. Exercitationem quaerat pariatur assumenda odio eveniet impedit consequuntur totam, doloremque dolore a itaque quidem. Nesciunt dolorum a autem. Nesciunt, esse.
+    </p>
+    <h1>
+        Necessitatibus?
+    </h1>
+    <p>
+        Minima, aliquam recusandae? Perspiciatis fugiat ea a eveniet nesciunt magni fuga minus veniam, amet porro odit molestias ut dignissimos quibusdam itaque non cumque blanditiis quos repudiandae iste totam libero. Et.
+    </p>
+    <h1>
+        Corrupti.
+    </h1>
+    <p>
+        Vel, sed rem laboriosam quod eligendi quisquam qui quas animi ipsam nobis sint obcaecati iusto voluptates provident totam quia aliquid rerum veniam id. Eum accusantium minima dolores enim voluptatum et?
+    </p>
+    <h1>
+        Soluta!
+    </h1>
+    <p>
+        Et, explicabo libero magnam asperiores autem beatae cum facere earum maxime ipsa labore saepe pariatur rerum sint, inventore, vitae consectetur dolores? Eos quod ipsum perspiciatis totam reiciendis dolor rerum distinctio!
+    </p>
+    <h1>
+        Illum.
+    </h1>
+    <p>
+        Odit doloribus aspernatur iusto, corrupti commodi deserunt pariatur ipsa hic, corporis debitis quam sunt illum neque? Tempore neque aliquam rerum nihil mollitia culpa quisquam ut enim, velit illo consequatur odit?
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector("h2").addEventListener("click", function() {
+            document.querySelector("h3").classList.toggle("d-none");
+        });
+        
+        let h1Elms = document.querySelectorAll("h1");
+        for(let i = 0; i < h1Elms.length; i++) {
+            h1Elms[i].addEventListener("click", function() {
+                this.nextElementSibling.classList.toggle("d-none");
+            });
+        }
+
+    </script>
+</body>
+</html>
